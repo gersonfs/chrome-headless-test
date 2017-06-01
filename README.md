@@ -1,3 +1,3 @@
 # chrome-headless-test
 
-General chrome headless testings. Hot to use promises and others.
+General chrome headless testings. How to use promises and others.
