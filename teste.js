@@ -40,7 +40,7 @@ CDP((client) => {
             console.log(2);
             return new Promise(function (resolve, reject){
                 var buf = Buffer.from(image.data, 'base64');
-                fs.writeFile("img.png", buf, function(err) {
+                fs.writeFile("tmp/img.png", buf, function(err) {
                     if(err) {
                         return reject(err);
                     }
@@ -74,7 +74,7 @@ CDP((client) => {
                 
             return new Promise(function (resolve, reject){
                 console.log(8);
-                fs.writeFile("img2.png", buf, function(err) {
+                fs.writeFile("tmp/img2.png", buf, function(err) {
                     if(err) {
                         return reject(err);
                     }
